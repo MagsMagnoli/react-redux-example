@@ -1,1 +1,3 @@
-react-redux-example
+# React Redux Example
+
+An example app demonstrating react and redux
