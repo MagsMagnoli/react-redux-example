@@ -61,3 +61,16 @@
 - wrap manually with action creator
 - bindactionacreators wraps for you
 - using as object allows for terse calling on props
+
+## Binding in Classes
+
+- bind functions to `this` in constructor not html to prevent recreation on change or use arrow function in class
+- can create state as class field instead of inside constructor with `this`
+
+## Create Action
+
+- function that creates action called `actionCreator`
+
+## Instantiate store
+
+- may want to give initial value if hydrating from server or local storage
