@@ -74,3 +74,13 @@
 ## Instantiate store
 
 - may want to give initial value if hydrating from server or local storage
+
+## Enzyme vs React-Testing-Library
+
+- Enzyme allows for shallow or mount modes
+  - shallow: isolated component
+  - mount: load component and children
+- RTL only has mount mode
+- In RTL, assertions are automatic in their query functions
+- both have `debug` method to print component output
+  - RTL's is color coded
