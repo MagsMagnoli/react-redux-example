@@ -84,3 +84,15 @@
 - In RTL, assertions are automatic in their query functions
 - both have `debug` method to print component output
   - RTL's is color coded
+
+## Testing container components
+
+- container components exported with connect pose issue for tests
+  - need to wrap with provider and give store
+  - alternatively can export component outside of connect for tests
+    - may see lint errors when importing connected form as default, safe to disable
+
+## Testing action creators
+
+- if done right, is almost waste of time to test
+  - is mostly repeating action creator code
