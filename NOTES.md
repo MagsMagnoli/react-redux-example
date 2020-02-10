@@ -96,3 +96,22 @@
 
 - if done right, is almost waste of time to test
   - is mostly repeating action creator code
+
+## React production build
+
+- prod mode tells react to make optimizations
+
+  - `PropTypes` validation removed
+  - smaller bundle size
+
+## Production Webpack
+
+- `MiniCssExtractPlugin` writes css to a file
+
+  - give a name and contenthash to only expire for clients that are out of date
+
+- add minify properties to `HTMLWebpackPlugin`
+
+- add `MiniCssExtractPlugin.loader` to css rules
+- add `sourceMap` to `css-loader` and `postcss-loader`
+- loaders in webpack run from bottom up
